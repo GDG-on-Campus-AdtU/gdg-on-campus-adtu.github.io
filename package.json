@@ -1,7 +1,7 @@
 {
-  "name": "website",
-  "private": true,
-  "version": "0.0.1",
+  "name": "gdg-on-campus-adtu.github.io",
+  "version": "0.1.0",
+  "description": "The website for GDG on Campus | AdtU!",
   "type": "module",
   "scripts": {
     "dev": "vite dev",
