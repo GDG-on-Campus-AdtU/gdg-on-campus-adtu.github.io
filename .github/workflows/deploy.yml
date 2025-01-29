@@ -22,6 +22,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build
+        env:
+          BASE_PATH: "/${{ github.event.repository.name }}"
         run: |
           pnpm build
       - name: Upload Artifacts
