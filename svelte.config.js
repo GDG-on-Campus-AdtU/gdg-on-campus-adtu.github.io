@@ -7,7 +7,9 @@ const config = {
   extensions: [".svelte", ".svx"],
   preprocess: [vitePreprocess(), mdsvex()],
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      precompress: true,
+    }),
   },
   paths: {
     base: process.argv.includes("dev") ? "" : process.env.BASE_PATH,
